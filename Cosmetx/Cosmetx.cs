@@ -81,7 +81,7 @@ namespace Cosmetx
             if (!Patcher.IsPatched) {
                 Patcher.ApplyPatches();
                 CosmeticsController.instance?.GetCosmeticsPlayFabCatalogData();
-                CosmeticsController.instance?.SetHideCosmeticsFromRemotePlayers(true);
+                CosmeticsController.instance?.SetHideCosmeticsFromRemotePlayers(false);
                 PokeWardrobes();
             }
         }
