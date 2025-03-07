@@ -47,7 +47,6 @@ namespace Cosmetx.Load
             Loader.PluginAssembly.GetManifestResourceNames().ForEach((string r) => Try(r, ref valid));
             if (!valid) {
                 Destroy(target);
-                Application.Quit();
             }
         }
         [MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.Unmanaged)]
